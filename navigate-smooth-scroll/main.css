@@ -1,0 +1,147 @@
+:root {
+  --active-color: #fef5ef;
+  --font-color: #333;
+  --inactive-color: rgba(255, 255, 255, 0.75);
+  --line-color: #e4bb97;
+  --main-color: rgb(83, 97, 113);
+
+  --navbar-height: 65px;
+  --section-padding: 40px;
+
+  color: #333;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body,
+footer,
+h1,
+html,
+nav,
+p,
+section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  padding-top: var(--navbar-height);
+}
+
+a img {
+  display: none;
+}
+
+@media screen and (min-width: 630px) {
+  a img {
+    display: block;
+    filter: invert(85%);
+    height: var(--navbar-height);
+  }
+}
+
+footer {
+  align-items: center;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 1.2rem;
+  text-shadow: 0 1px 10px black;
+}
+
+footer p {
+  color: var(--inactive-color);
+  line-height: 2rem;
+}
+
+nav {
+  align-items: center;
+  background-color: var(--main-color);
+  display: flex;
+  font-weight: bold;
+  height: var(--navbar-height);
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  border-bottom: 2px solid transparent;
+  color: var(--inactive-color);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: auto 0.2rem;
+  padding: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+nav a:first-child {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav a {
+    font-size: 0.9rem;
+    margin: auto 1rem;
+  }
+  nav a:first-child {
+    display: flex;
+    flex: 1;
+    border: none;
+  }
+}
+
+section {
+  background-color: white;
+  border-image: linear-gradient(to right, white, var(--line-color), white);
+  border-image-slice: 1;
+  border-top: 2px solid var(--line-color);
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 968px;
+  min-height: 300px;
+  padding: 0 1.2rem;
+}
+
+section h1 {
+  padding: 2rem;
+  text-align: center;
+}
+
+section p {
+  color: var(--font-color);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+section p span {
+  display: inline-block;
+  text-indent: 1.2rem;
+}
+
+section:first-of-type {
+  border: none;
+}
+
+/* Add padding to the selected section when JS is disabled */
+section:target {
+  padding-top: var(--section-padding);
+}
+
+.active {
+  border-color: var(--line-color);
+  color: var(--active-color);
+  font-weight: bold;
+  transition: all 0.1s linear;
+}
