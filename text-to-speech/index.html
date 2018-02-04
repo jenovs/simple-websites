@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Speakr</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title"><span class="letter-blue">S</span><span class="letter-red">p</span><span class="letter-yellow">e</span><span class="letter-blue">a</span><span class="letter-green">k</span><span class="letter-red">r</span></h1>
+    <div class="controls-wrapper">
+      <div class="controls">
+        <button id="speak-btn">Speak</button>
+        <button id="pause-btn" disabled>Pause</button>
+        <button id="stop-btn" disabled>Stop</button>
+        <select>
+        </select>
+      </div>
+      <div class="sliders">
+        <div class="slider-wrapper">
+          <label for="volume-slider">Volume:</label>
+          <p id="volume-slider-value">80%</p>
+          <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.8">
+        </div>
+        <div class="slider-wrapper">
+          <label for="pitch-slider">Pitch:</label>
+          <p id="pitch-slider-value">1.00</p>
+          <input id="pitch-slider" type="range" min="0" max="2" step="0.01" value="1">
+        </div>
+        <div class="slider-wrapper">
+          <label for="rate-slider">Rate:</label>
+          <p id="rate-slider-value">1.00</p>
+          <input id="rate-slider" type="range" min="0" max="3" step="0.01" value="1">
+        </div>
+      </div>
+    </div>
+    <textarea class="input-text" placeholder="Enter the text">This is a demo of a SpeechSynthesis component of the Web Speech API.&#013;&#010;It's an experimental feature and therefore is not guaranteed to work.&#013;&#010;As of February 2018 it only works in Chrome, Firefox and Safari.&#013;&#010;&#013;Paste your text in this textarea and click "Speak".</textarea>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
