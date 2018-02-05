@@ -1,0 +1,29 @@
+.hero-1 {
+  background-image: linear-gradient($color-tint, $color-tint),
+    url(../images/table.jpg);
+  height: calc(100% - #{$navbar-height});
+}
+
+.hero-2 {
+  background-image: linear-gradient($color-tint, $color-tint),
+    url(../images/city.jpg);
+  height: calc(100% - #{$navbar-height});
+}
+
+.parallax {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  /* Turn off parallax scrolling for tablets and phones.*/
+  .parallax {
+    background-attachment: scroll;
+  }
+}

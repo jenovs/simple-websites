@@ -1,0 +1,42 @@
+.navbar {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: $navbar-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar__links {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  margin-right: 0;
+}
+
+.navbar__links a {
+  color: #333;
+  font-family: 'myCondensed', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar__logo-image {
+  height: calc(#{$navbar-height} - 10px);
+  filter: invert(0.3);
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .navbar {
+    position: relative;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar a:first-child {
+    display: none;
+  }
+}

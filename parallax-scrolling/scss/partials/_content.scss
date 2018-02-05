@@ -1,0 +1,38 @@
+.content__call-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 982px;
+  width: 100%;
+
+  p {
+    color: #fff;
+    font-family: 'myRegular', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.288;
+    padding: 0 15%;
+    text-align: center;
+  }
+
+  .button {
+    margin-top: 82px;
+  }
+}
+
+.content__header {
+  color: #fff;
+  font-family: 'myCondensed', sans-serif;
+  font-size: 7vw;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .content {
+    margin-top: 0;
+  }
+}
