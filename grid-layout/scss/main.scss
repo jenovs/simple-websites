@@ -8,12 +8,6 @@ body {
   font-family: 'Helvetica neue', Helvetica, sans-serif;
 }
 
-header {
-  @include shadow;
-  background-color: #fff;
-  grid-area: header;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr minmax(154px, 278px) minmax(542px, 860px) 1fr;
@@ -55,13 +49,6 @@ header {
 }
 
 @media (max-width: 767px) {
-  header {
-    background-color: gray;
-    position: fixed;
-    height: 42px;
-    width: 100%;
-  }
-
   .container {
     grid-template-columns: auto;
     grid-template-rows: 42px auto;
