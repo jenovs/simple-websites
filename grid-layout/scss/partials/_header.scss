@@ -1,0 +1,137 @@
+header {
+  @include shadow;
+
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  grid-area: header;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.header__nav {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.header__nav-item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  & > a {
+    align-items: center;
+    color: #999;
+    display: flex;
+    font-size: 13px;
+    height: 100%;
+    justify-content: center;
+    margin: 0 7px;
+  }
+
+  &:hover {
+    background-color: #f9f9fa;
+  }
+}
+
+.header__sub-nav {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  display: none;
+  left: -25px;
+  padding: 3.5px 0 4.5px 0;
+  padding: 0 0 4.5px 0;
+  position: absolute;
+  text-transform: capitalize;
+  top: 46px;
+  white-space: nowrap;
+  width: 200px;
+  z-index: 1;
+
+  @include triangle(-16, 25);
+
+  hr {
+    border: none;
+    border-top: 1px solid #e7e9eb;
+    margin: 4.5px 0 3.5px;
+  }
+
+  &.show {
+    display: block;
+  }
+
+  .bridge {
+    height: 4px;
+    position: relative;
+    top: -4px;
+  }
+}
+
+.header__sub-nav-item {
+  padding: 2.5px 14px;
+  text-align: left;
+
+  &:hover {
+    background-color: #f3f3f3;
+  }
+
+  a {
+    color: #666;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.header__nav-item:nth-child(4) {
+  box-shadow: inset 0 -1px 2px -1px #333;
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 42px;
+    position: fixed;
+  }
+
+  .hamburger {
+    align-items: center;
+    background-color: #666;
+    color: #fff;
+    cursor: default;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 1.4rem;
+    height: 42px;
+    justify-content: center;
+    width: 41px;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .header__nav-item {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .search {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  header {
+    height: 42px;
+    position: relative;
+  }
+}

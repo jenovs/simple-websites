@@ -1,0 +1,17 @@
+@mixin triangle ($top, $left) {
+  .triangle-shadow {
+    border: 8px solid transparent;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.2);
+    left: #{$left}px;
+    position: absolute;
+    top: #{$top}px;
+  }
+
+  .triangle {
+    border: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+    left: calc(#{$left}px + 1px);
+    position: absolute;
+    top: calc(#{$top}px + 2px);
+  }
+}
