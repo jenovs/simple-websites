@@ -1,20 +1,21 @@
 .side-navbar {
   @include shadow;
 
-  background-color: #f9f9fa;
+  background-color: #e9eaec;
   font-size: 14px;
   grid-area: side-navbar;
   max-width: 278px;
   min-width: 174px;
-  height: 500px;
   justify-self: right;
+  height: 100%;
   width: 100%;
 }
 
 .side-navbar__item {
   align-items: center;
+  background-color: #f9f9fa;
   border-top: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 0px 0px;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.07);
   color: #555;
   display: flex;
   height: 44px;
@@ -22,7 +23,6 @@
   padding: 11px 14px;
 
   & > img {
-    height: 27px;
     margin-right: 12px;
     width: 27px;
   }
@@ -36,7 +36,7 @@
 
 .side-navbar__item:nth-child(3) {
   background-color: #e9eaec;
-  box-shadow: 0 1px 0 1px #e9eaec, inset 0 2px 5px -4px rgba(0, 0, 0, 1);
+  box-shadow: -1px 1px 1px 1px #e9eaec, inset 0 2px 3px -4px rgba(0, 0, 0, 1);
   color: #999;
   cursor: auto;
   font-size: 11px;
@@ -45,6 +45,7 @@
   margin-top: 0;
   position: relative;
   text-transform: uppercase;
+  z-index: 0;
 
   & > span {
     bottom: 10px;
