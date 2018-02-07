@@ -10,7 +10,39 @@
 
 <body>
   <div class="container">
-    <header>Header</header>
+    <header>
+      <div class="hamburger">&#x2261;</div>
+      <ul class="header__nav">
+        <li class="header__nav-item"><a href="/">Logo</a></li>
+        <li class="header__nav-item"><a href="#"><span>Profile</span></a></li>
+        <li class="header__nav-item" data-submenu="0"><a href="#">Connections</a>
+          <ul data-submenu="0" class="header__sub-nav">
+            <div class="triangle-shadow"></div>
+            <div class="triangle"></div>
+            <li class="bridge"></li>
+            <li class="header__sub-nav-item"><a href="#">Your Connections</a></li>
+            <li class="header__sub-nav-item"><a href="#">Your Alumni Network</a></li>
+            <hr/>
+            <li class="header__sub-nav-item"><a href="#">People You May Know</a></li>
+            <li class="header__sub-nav-item"><a href="#">Add Connections</a></li>
+            <li class="header__sub-nav-item"><a href="#">Manage Your Connections</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item"><a href="#">jobs</a></li>
+        <li class="header__nav-item" data-submenu="1"><a href="#">More</a>
+          <ul data-submenu="1" class="header__sub-nav">
+            <div class="triangle-shadow"></div>
+            <div class="triangle"></div>
+            <li class="bridge"></li>
+            <li class="header__sub-nav-item"><a href="#">Post a Job</a></li>
+            <li class="header__sub-nav-item"><a href="#">Salaries</a></li>
+            <hr/>
+            <li class="header__sub-nav-item"><a href="#">Companies</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="search"></div>
+    </header>
     <nav class="side-navbar">
       <div class="side-navbar__item"><img src="images/cog.png" alt="Cog">Edit Profile</div>
       <div class="side-navbar__item"><img src="images/eye.png" alt="Eye">Preview Profile</div>
