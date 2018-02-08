@@ -21,6 +21,7 @@ header {
 
 .header__nav-item {
   align-items: center;
+  border-bottom: 1px solid transparent;
   display: flex;
   justify-content: center;
   position: relative;
@@ -92,8 +93,9 @@ header {
   }
 }
 
+// JOBS menu item
 .header__nav-item:nth-child(4) {
-  box-shadow: inset 0 -1px 2px -1px #333;
+  border-bottom-color: rgba(0, 0, 0, 0.3);
 }
 
 @media #{$break-small} {
