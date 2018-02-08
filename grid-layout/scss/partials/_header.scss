@@ -5,7 +5,6 @@ header {
   background-color: $color-elem-background;
   display: flex;
   grid-area: header;
-  width: 100%;
 }
 
 .hamburger {
@@ -16,6 +15,8 @@ header {
   display: flex;
   flex-grow: 1;
   height: 100%;
+  margin: auto;
+  max-width: 1152px;
 }
 
 .header__nav-item {
@@ -33,7 +34,8 @@ header {
     font-size: 13px;
     height: 100%;
     justify-content: center;
-    margin: 0 7px;
+    padding-top: 1px;
+    margin: 0 13px;
   }
 
   &:hover {
@@ -51,7 +53,7 @@ header {
   padding: 0 0 4.5px 0;
   position: absolute;
   text-transform: capitalize;
-  top: 46px;
+  top: 60px;
   white-space: nowrap;
   width: 200px;
   z-index: 1;
@@ -98,6 +100,7 @@ header {
   header {
     height: 42px;
     position: fixed;
+    width: 100%;
   }
 
   .hamburger {
@@ -124,6 +127,10 @@ header {
     text-transform: uppercase;
   }
 
+  .header__sub-nav {
+    top: 46px;
+  }
+
   .search {
     margin-right: 14px;
   }
@@ -133,5 +140,9 @@ header {
   header {
     height: 42px;
     position: relative;
+  }
+
+  .header__sub-nav {
+    top: 46px;
   }
 }
