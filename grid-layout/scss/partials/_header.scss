@@ -94,7 +94,7 @@ header {
   box-shadow: inset 0 -1px 2px -1px #333;
 }
 
-@media (max-width: 767px) {
+@media #{$break-small} {
   header {
     height: 42px;
     position: fixed;
@@ -129,7 +129,7 @@ header {
   }
 }
 
-@media (min-width: 768px) and (max-width: 959px) {
+@media #{$break-medium} {
   header {
     height: 42px;
     position: relative;

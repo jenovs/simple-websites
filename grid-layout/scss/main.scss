@@ -48,7 +48,7 @@ body {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media #{$break-small} {
   .container {
     grid-template-columns: auto;
     grid-template-rows: 42px auto;
@@ -78,7 +78,7 @@ body {
   }
 }
 
-@media (min-width: 767px) and (max-width: 959px) {
+@media #{$break-medium} {
   .container {
     grid-template-columns: auto minmax(175px, 220px) minmax(542px, 684px) auto;
     grid-template-rows: 42px auto;
