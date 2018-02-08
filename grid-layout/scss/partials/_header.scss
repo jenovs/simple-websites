@@ -2,7 +2,7 @@ header {
   @include shadow;
 
   align-items: center;
-  background-color: #fff;
+  background-color: $color-elem-background;
   display: flex;
   grid-area: header;
   width: 100%;
@@ -37,12 +37,12 @@ header {
   }
 
   &:hover {
-    background-color: #f9f9fa;
+    background-color: $color-elem-accent;
   }
 }
 
 .header__sub-nav {
-  background-color: #fff;
+  background-color: $color-elem-background;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   display: none;
@@ -80,7 +80,7 @@ header {
   text-align: left;
 
   &:hover {
-    background-color: #f3f3f3;
+    background-color: $color-elem-accent-2;
   }
 
   a {
