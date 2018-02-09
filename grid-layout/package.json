@@ -1,8 +1,8 @@
 {
   "name": "grid-layout",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Recreation of [angel.co/jobs](https://angel.co/jobs) page layout using CSS Grid.",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
@@ -12,7 +12,8 @@
   "author": "Viktors Jenovs",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
     "gulp-sass": "^3.1.0"
   }
 }
