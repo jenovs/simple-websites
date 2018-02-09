@@ -1,0 +1,17 @@
+.jobs-section {
+  background-color: $color-background;
+  grid-area: jobs-section;
+  max-width: 860px;
+  width: 100%;
+}
+
+.jobs-section__article {
+  background-color: $color-elem-accent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  height: 160px;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background-color: darken($color-elem-accent, 1.5%);
+  }
+}

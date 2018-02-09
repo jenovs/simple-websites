@@ -1,0 +1,23 @@
+.overlay {
+  display: none;
+}
+
+@media #{$break-small} {
+  .overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    display: inherit;
+    height: 100vh;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 42px;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+}

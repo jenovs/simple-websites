@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-gap: 14px;
+  grid-template-areas:
+    'header header header header'
+    '. side-navbar filter .'
+    '. side-navbar jobs-section .';
+  grid-template-columns: auto minmax(220px, 277px) minmax(684px, 860px) auto;
+  grid-template-rows: 56px 146px auto;
+  margin: auto;
+}
+
+@media #{$break-small} {
+  .container {
+    grid-template-areas:
+      'header'
+      'filter'
+      'jobs-section';
+    grid-template-columns: auto;
+    grid-template-rows: 42px auto;
+  }
+}
+
+@media #{$break-medium} {
+  .container {
+    grid-template-columns: auto minmax(175px, 220px) minmax(542px, 684px) auto;
+    grid-template-rows: 42px auto;
+  }
+}
