@@ -1,0 +1,40 @@
+.filter {
+  background-color: $color-elem-background;
+  grid-area: filter;
+  height: 146px;
+  max-width: 860px;
+  width: 100%;
+}
+
+.filter__search-wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  height: 60px;
+}
+
+.filter__filter-selectors {
+  background-color: $color-elem-accent;
+  height: 47px;
+}
+
+.filter__counter {
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  height: 39px;
+  justify-content: flex-end;
+  position: relative;
+
+  .filter__counter-text {
+    bottom: -8px;
+    color: #666;
+    font-size: 18px;
+    left: 7px;
+    position: absolute;
+  }
+}
+
+@media #{$break-small} {
+  .filter {
+    display: none;
+  }
+}
